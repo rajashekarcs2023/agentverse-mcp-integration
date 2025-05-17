@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "weather": {
+      "command": "python3",
+      "args": [
+        "/Users/radhikadanda/agents-agentverse/uagent_mcp/examples/new_proxy.py"
+      ],
+      "env": {
+        "BRIDGE_URL": "http://localhost:8080/jsonrpc",
+        "MCP_TIMEOUT": "12000"
+      }
+    }
+  }
+}
