@@ -118,14 +118,20 @@ To use the bridge with Claude Desktop, create a `claude_config.json` file:
 
 ```json
 {
-  "mcp": {
-    "command": "python3 claude_bridge.py",
-    "env": {
-      "UAGENT_ADDRESS": "agent1qw2e3r4t5y6u7i8o9p0...",
-      "MCP_TIMEOUT": "30"
+  "mcpServers": {
+    "weather": {
+      "command": "python3",
+      "args": [
+        "/Users/rajashekar/agents-agentverse/uagent_mcp/examples/new_proxy.py"
+      ],
+      "env": {
+        "BRIDGE_URL": "http://localhost:8080/jsonrpc",
+        "MCP_TIMEOUT": "12000"
+      }
     }
   }
 }
+
 ```
 
 ## License
