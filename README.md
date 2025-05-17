@@ -1,5 +1,4 @@
 # agentverse-mcp-integration
-# uAgent MCP
 
 A library for integrating uAgents with Model Control Protocol (MCP) servers.
 
