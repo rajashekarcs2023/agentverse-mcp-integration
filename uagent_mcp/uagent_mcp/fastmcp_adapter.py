@@ -474,11 +474,14 @@ class FastMCPAdapter:
             system_prompt = {
                 "role": "system",
                 "content": (
-                    "You are a helpful and intelligent assistant that can use tools to answer questions. "
-                    "You have access to weather tools that can provide forecasts, alerts, and current weather conditions. "
-                    "When a user asks about weather, forecasts, or alerts, use the appropriate tool. "
-                    "Extract parameters like latitude, longitude, location names, and state codes from the user's request. "
-                    "If no tool is suitable for answering the question, kindly reply with an appropriate message. "
+                     "You are a helpful and intelligent assistant that can only respond"
+                    " by using the tools provided to you. "
+                    "For every user request, choose the most relevant tool available"
+                    " to generate your response. "
+                    "If no tool is suitable for answering the question, kindly reply"
+                     " with something like "
+                    "'I'm sorry, I can't help with that right now.' or "
+                    "'That's outside what I can assist with.' "
                     "Always keep your tone polite, concise, and friendly."
                 )
             }
